@@ -1,0 +1,118 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Moderustic;
+    
+}
+
+.section-hero{
+    width: 100%;
+    height: 700px;
+background-image: linear-gradient(#2F303A66,#2F303A66),
+url(./img/hero.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 85px;
+    /* margin-top: 120px; */
+    align-items: center;
+}
+
+.nav-list-item:hover{
+    transform: scale(1.5);
+}
+
+.nav-list-item:nth-child(1){
+    transition-duration: 300ms;
+}
+.nav-list-item:nth-child(2){
+    transition-duration: 300ms;
+}
+.nav-list-item:nth-child(3){
+    transition-duration: 300ms;
+}
+.nav-list-item:nth-child(4){
+    transition-duration: 300ms;
+}
+
+.nav-list-item{
+    transition-property: transform;
+}
+
+.navigation-name{
+    display: flex;
+    margin-left: 70px;
+}
+
+.icon-line{
+    width: 2px;
+    height: 75px;
+    background-color: #0A1D5D;
+    margin-right: 30px;
+}
+.name{
+    text-transform: uppercase;
+    color: #D84329;
+    font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; /* 200% */
+letter-spacing: 2px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+.name2{
+    color: #0A1D5D;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+.section-hero{
+    display: flex;
+}
+
+.hero-text-div{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 70px;
+    padding-bottom: 80px;
+}
+
+.hero-main{
+    color: white;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+margin-top: 1px;
+margin-bottom: 1px; 
+}
+
+.hero-paragraph{
+    color: rgba(255, 255, 255, 0.702);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+margin-top: 1px;
+margin-bottom: 1px;  
+padding-top: 10px;
+}
