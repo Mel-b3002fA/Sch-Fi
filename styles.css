@@ -2,13 +2,16 @@
     list-style: none;
     text-decoration: none;
     font-family: Moderustic;
-    
+}
+
+a{
+   color: #0A1D5D;
 }
 
 .section-hero{
     width: 100%;
     height: 700px;
-background-image: linear-gradient(#2F303A66,#2F303A66),
+background-image: linear-gradient(#76565666,#76565666),
 url(./img/hero.jpeg);
     background-position: center;
     background-size: cover;
@@ -18,7 +21,10 @@ url(./img/hero.jpeg);
     display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
 }
 
 .nav-list{
@@ -26,10 +32,12 @@ url(./img/hero.jpeg);
     gap: 85px;
     /* margin-top: 120px; */
     align-items: center;
+    position: fixed;
+    margin-left: 800px;
 }
 
 .nav-list-item:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .nav-list-item:nth-child(1){
@@ -47,6 +55,14 @@ url(./img/hero.jpeg);
 
 .nav-list-item{
     transition-property: transform;
+    color: #0A1D5D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+margin-top: 1px;
+margin-bottom: 1px;
 }
 
 .navigation-name{
@@ -55,10 +71,47 @@ url(./img/hero.jpeg);
 }
 
 .icon-line{
-    width: 2px;
+    z-index: 2;
+    width: 1px;
     height: 75px;
-    background-color: #0A1D5D;
+    border-right: 2px solid #0A1D5D;
+    background-color: #fff;
     margin-right: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.schuefi{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 17.5px;
+}
+
+.icon-line:nth-child(1){
+    animation: animated-line 5000ms infinite 2000ms;
+}
+
+
+
+@keyframes animated-line {
+    0%{
+/* transform: translateX(230px); */
+width: 3px;
+    }
+    50%{
+       /*  transform: translateX(-15px); */
+       width: 210px;
+    }
+    100%{
+        /* transform: translateX(230px); */ 
+    }
+}
+
+.name-div{
+    z-index: 1;
+    position: fixed;
+    padding-left: 20px;
 }
 .name{
     text-transform: uppercase;
@@ -115,4 +168,124 @@ letter-spacing: 1.08px;
 margin-top: 1px;
 margin-bottom: 1px;  
 padding-top: 10px;
+}
+
+
+.section-team{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+   flex-direction: column;
+   margin-bottom: 100px;
+   text-align: center;
+}
+
+.team-about-us{
+    display: flex;
+    justify-content: center;
+
+    color: #0A1D5D;
+
+    font-family: Moderustic;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+}
+
+.team-desrc{
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+
+    color: #0A1D5D;
+
+font-family: Moderustic;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+/* line-height: 40px; /* 200% */ */
+letter-spacing: 1.08px;
+}
+
+.team-wrap{
+   
+    max-width: 500px;
+}
+
+.section-contact{
+    width: 100%;
+    height: 300px;
+    padding-top: 70px;
+    background-color: rgb(248, 238, 235);
+}
+.contact-main{
+    display: flex;
+    justify-content: center;
+    color: #0A1D5D;
+
+    font-family: Moderustic;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+    margin-bottom: 100px;
+}
+
+.contact-list{
+   text-align: center;
+   color: #0A1D5D;
+   margin-bottom: 150px;
+}
+/* 
+.contact-list:nth-child(1){
+    margin-bottom: 100px;
+} */
+
+.footer-wrap{
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+margin-left: 80px;
+}
+
+.footer-list{
+    padding-left: 1px;
+}
+.footer-main{
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    color: #D84329;
+    font-size: 30px;
+    font-family: Moderustic;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 200% */
+letter-spacing: 2px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+.footer-main-sec{   
+    color: #0A1D5D;
+    font-size: 25px;
+    font-family: Moderustic;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+.footer-list-item{
+    color: #0A1D5D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+
 }
